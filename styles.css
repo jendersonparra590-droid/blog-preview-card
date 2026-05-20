@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&display=swap');
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray500: hsl(0, 0%, 42%);
+    --Gray950: hsl(0, 0%, 7%);
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    margin: 0;
+    background-color: var(--Yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    width: 100%;
+}
+
+.box {
+    background-color: var(--White);
+    padding: 25px;
+    border: 1px solid var(--Gray950);
+    box-shadow: 8px 8px 0 0 var(--Gray950);
+    border-radius: 13px;
+    width: 334px;
+}
+
+button {
+    background-color: var(--Yellow);
+    height: 30px;
+    width: 80px;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+
+.text {
+    color: var(--Gray500);
+    font-size: 16px;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.author h5 {
+    margin: 0;
+    font-weight: 800;
+    color: var(--Gray950);
+}
+
+.Fondo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.Icono {
+    height: 30px;
+}
+
+button:hover {
+    background-color: var(--Gray950);
+    color: var(--White);
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 3px dashed var(--Gray950);
+    outline-offset: 4px;
+}
+
+
+@media (max-width: 480px) {
+    .box {
+        width: 85%;
+        margin: 30px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
